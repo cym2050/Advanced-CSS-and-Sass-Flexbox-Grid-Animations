@@ -1,0 +1,81 @@
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+
+/*设定基线 baseline*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;		
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 	16px;
+	line-height: 1.7;
+	color: 	#777;
+	padding: 30px;
+}
+
+/*开始制定样式*/
+
+.header {
+	height: 95vh;
+	background-image: linear-gradient(to right, rgba(128, 214, 113, 0.8), rgba(40, 180, 133, 0.8)) , url(../img/hero.jpg);
+	background-size: cover;
+	background-position: top;
+	position: relative;
+
+	clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.logo-box {
+	position: absolute;
+	top: 40px;
+	left: 40px;
+}
+
+
+.Logo {
+	height: 35px;
+}
+/* 也可以用下面这种，因为img是inline-block */
+/* .Logo {
+	position: absolute;
+	top: 40px;
+	left: 40px;
+	height: 35px;
+} */
+
+.text-box {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.heading-primary {
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.heading-primary-main {
+	display: block;
+	font-weight: 400;
+	font-size: 60px;
+	letter-spacing: 35px;
+}
+
+.heading-primary-sub {
+	display: block;
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 17.4px;
+}
